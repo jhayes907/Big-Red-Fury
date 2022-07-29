@@ -1,2 +1,63 @@
+// variables
 const game = document.getElementById('game');
-const 
+const movement = document.getElementById('movement');
+const score = document.getElementById('score');
+const status = document.getElementById('status');
+const ctx = document.getElementById('2d');
+// const santa;
+// const penguin;
+
+
+game.setAttribute('height', getComputedStyle(game), 'height');
+game.setAttribute('width', getComputedStyle(game), 'width');
+
+
+// game screen 
+
+
+// event listeners
+
+
+// enttities
+
+class Kringle {
+    constructor(x, y, image, width, height) {
+        this.x = x;
+        this.y = y;
+        this.image = image;
+        this.width = width;
+        this.height = height;
+        this.alive = true;
+
+        this.render = function() {
+            ctx.drawImage(this.image, this.x, this.y)
+        }
+    }
+}
+
+class Penguins extends Kringle {
+    constructor(x, y, image, width, height,) {
+        this.x = x;
+        this.y = y;
+        this.image = image;
+        this.height = height;
+        this.width = width;
+        this.alive = true;
+
+        this.render = function() {
+            ctx.drawImage(this.image, this.x, this.y)
+        }
+    }
+
+}
+
+
+// movement controls
+
+
+
+// penguin renderin logic
+
+
+
+// Level progression logic
