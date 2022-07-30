@@ -1,4 +1,4 @@
-// variables
+// Variables
 const game = document.getElementById('game');
 const movement = document.getElementById('movement');
 const score = document.getElementById('score');
@@ -12,13 +12,13 @@ game.setAttribute('height', getComputedStyle(game), 'height');
 game.setAttribute('width', getComputedStyle(game), 'width');
 
 
-// game screen 
+// Game screen 
 
 
-// event listeners
+// Event listeners
 
 
-// enttities
+// Enttities
 
 class Kringle {
     constructor(x, y, image, width, height) {
@@ -52,12 +52,13 @@ class Penguins extends Kringle {
 }
 
 
-// movement controls
+// Movement controls
 
 
+// Hit detection
 
-// penguin renderin logic
 
+// Penguin renderin logic
 
 
 // Level progression logic

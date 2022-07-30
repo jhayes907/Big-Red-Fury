@@ -6,26 +6,36 @@ body {
 
 #container {
     max-width: ;
-    background-image: ;
     margin: 0 auto;
+    background: repeating-linear-gradient(
+        45deg,
+        #ff0000,
+        #ff0000 10px,
+        #f8f8ff 10px,
+        #f8f8ff 20px,
+    );
     padding: ;
     display: grid;
     grid-gap: 1em;
     grid-template-columns: ;
     grid-template-rows: ;
-    grid-template-areas: ;
+    grid-template-areas: 'top-left, top, top-right',
+                         'game, game, game',
+                         'bottom-left', 'bottom', 'bottom-right';
+
 }
 
+                    
 #game {
     background-image: ;
     
 }
 
-#top-left, #top-right, #bottom-left, #bottom-right {
+#top-left, #top, #top-right, #bottom-left, #bottom, #bottom-right {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: green;
 }
 
 main {
